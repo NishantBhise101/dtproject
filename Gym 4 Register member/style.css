@@ -1,0 +1,113 @@
+/* Resetting default styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light gray background */
+    background-image: url(https://image.slidesdocs.com/responsive-images/background/treadmills-or-running-machines-in-a-3d-rendered-fitness-gym-powerpoint-background_ff8bf5ea79__960_540.jpg);
+  } 
+  
+  .background{
+    background-size: contain;
+    height: 50%;
+    width: 60%;
+
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black; /* Darken heading color */
+    font-weight: 750;
+    background-color: rgb(251, 255, 0);
+    font-size: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px; /* Increase max-width for better readability */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smoother effect */
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    color: #555; /* Darken label color */
+    transition: color 0.3s ease; /* Add transition for smoother effect */
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"], button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Adding transition for smoother visual effect */
+  }
+  
+  input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight border color on focus */
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adding transition for smoother hover effect */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darken button color on hover */
+  }
+  
+  #registration-message {
+    text-align: center;
+    color: red;
+    margin-top: 10px; /* Add spacing from the form */
+    transition: color 0.3s ease; /* Add transition for smoother effect */
+  }
+  
+  /* Add animations and effects */
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .invalid {
+    animation: shake 0.5s ease; /* Apply shake animation to invalid fields */
+  }
+  
+  .invalid-label {
+    color: red !important; /* Override label color for invalid fields */
+  }
+  
+  .valid {
+    box-shadow: 0 0 0 2px #0f0; /* Add green glow to valid fields */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 480px) {
+    form {
+      max-width: 100%; /* Adjust form width for smaller screens */
+    }
+  }
+  

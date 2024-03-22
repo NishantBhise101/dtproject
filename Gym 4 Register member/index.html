@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym New Member Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gym New Member Registration</h1>
+  <form id="member-registration-form">
+    <div class="form-group">
+      <label for="membership-id">Membership ID:</label>
+      <input type="text" id="membership-id" name="membership-id" required disabled>
+    </div>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" placeholder="Street Address" required>
+    </div>
+    <div class="form-group">
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required>
+    </div>
+    <div class="form-group">
+      <label for="zipcode">Zipcode:</label>
+      <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" title="Please enter a valid 5-digit zipcode" required>
+    </div>
+    <div class="form-group">
+      <label for="state">State:</label>
+      <select id="state" name="state" required>
+        <option value="">Select State</option>
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        </select>
+    </div>
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <input type="radio" id="gender-male" name="gender" value="male" required>
+      <label for="gender-male">Male</label>
+      <input type="radio" id="gender-female" name="gender" value="female" required>
+      <label for="gender-female">Female</label>
+      </div>
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter a phone number in XXX-XXX-XXXX format" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div id="content-container"></div>
+    <div class="form-group">
+      <label for="joining-date">Joining Date:</label>
+      <input type="date" id="joining-date" name="joining-date" value="<?php echo date('Y-m-d'); ?>" required> </div>
+    <div class="form-group">
+      <label for="plan">Plan:</label>
+      <select id="plan" name="plan" required>
+        <option value="">Select Plan</option>
+        <option value="basic">Basic</option>
+        <option value="premium">Premium</option>
+        </select>
+    </div>
+    <button type="submit">Register</button>
+  </form>
+  <p id="registration-message"></p>
+  <script src="script.js"></script>
+</body>
+</html>

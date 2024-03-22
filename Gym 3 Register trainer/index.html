@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Trainer Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background">
+     <div background="https://image.slidesdocs.com/responsive-images/background/treadmills-or-running-machines-in-a-3d-rendered-fitness-gym-powerpoint-background_ff8bf5ea79__960_540.jpg"></div>
+  </div>
+    <h1>Gym Trainer Registration</h1>
+  <form id="trainer-registration-form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div class="form-group">
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+    </div>
+    <div class="form-group">
+      <label for="specialization">Specialization (e.g., Yoga, Strength Training):</label>
+      <input type="text" id="specialization" name="specialization" required>
+    </div>
+    <div class="form-group">
+      <label for="experience">Experience (in years):</label>
+      <input type="number" min="0" id="experience" name="experience" required>
+    </div>
+    <button type="submit">Register</button>
+  </form>
+  <p id="registration-message"></p>
+  <script src="script.js"></script>
+</body>
+</html>
